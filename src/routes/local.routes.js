@@ -4,7 +4,7 @@ import { getAllLocais, getLocalById,getLocalsByStatus,deleteLocal,createLocal} f
 const router = Router()
 
 router.get("/",getAllLocais)
-router.get("/id",getLocalById)
+router.get("/id/:id",getLocalById)
 router.get("/status/:status",getLocalsByStatus)
 router.post("/",createLocal)
 router.delete("/",deleteLocal)
